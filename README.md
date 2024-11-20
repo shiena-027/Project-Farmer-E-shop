@@ -3,7 +3,9 @@ this is a group project
 
 for product meanings
 p_id -- product id
+
 c_id -- category id
+
 c_name -- category name
 title -- product name
 slogan -- about the product
