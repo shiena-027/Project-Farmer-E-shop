@@ -1,7 +1,11 @@
 # Project-Farmer-E-shop
 this is a group project
-** username: admin
-** password: admin123
+
+** Login Credentials for Admin Panel **
+
+username: admin
+
+password: admin123
 
 for product meanings
 
