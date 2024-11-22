@@ -1,0 +1,212 @@
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url('pics/product-bg.jpg') repeat center center/cover;
+}
+
+.background {
+    background: url('pics/product-bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+
+}
+
+.topitem {
+    float: right;
+}
+
+.top {
+    float: left;
+}
+
+.topitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 18px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topitem a:hover {
+    background-color: #111;
+}
+
+.topcart a{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 18px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topcart a:hover {
+    background-color: #111;
+}
+
+.cart {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.searchbar {
+    margin: 15px 0px 0px 15px;
+    padding: 5px;
+}
+
+.searchbutton {
+    margin: 15px 15px 15px 0px;
+    padding: 4px 15px 4px 15px;
+}
+
+.searchbutton img {
+    height: 15px;
+    width: 15px;
+}
+
+/* carousel code */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.footergrid>div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Prodcut Card */
+
+.prodcon {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    margin: 25px;
+    background-color: white;
+    padding: 5px;
+}
+
+.prodcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.prodcard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.prodimg{
+    border-radius: 5px 5px 0 0;
+}
+
+.proddesc{
+    padding: 2px 16px;
+}

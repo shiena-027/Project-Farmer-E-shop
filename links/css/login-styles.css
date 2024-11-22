@@ -1,11 +1,11 @@
-/* Post Product Form Styling */
+/* Login Form Styling */
 body, html {
   height: 100%;
   font-family: 'Poppins', sans-serif;
 }
 
 .background {
-  background: url('product-bg.jpg') no-repeat center center/cover;
+  background: url('pics/login-bg.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   display: flex;
@@ -16,25 +16,26 @@ body, html {
 }
 
 .form-container {
-  background: linear-gradient(145deg, #ffffff, #f0f0f0);
-  border-radius: 15px;
+  background: #ffffff; /* White background for clear contrast */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for definition */
+  border-radius: 15px; /* Rounded corners */
   padding: 30px 40px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Strong shadow for separation */
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
 
 h2 {
   margin-bottom: 20px;
   font-size: 28px;
-  color: #4CAF50;
+  color: #007bff;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -48,11 +49,11 @@ form label {
   text-transform: uppercase;
 }
 
-form input, form textarea, form select, form button {
+form input, form button {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
@@ -60,42 +61,39 @@ form input, form textarea, form select, form button {
   transition: all 0.3s ease;
 }
 
-form input:focus, form textarea:focus, form select:focus {
+form input:focus {
   outline: none;
-  box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.6);
-  background: #f9fff7;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6);
+  background: #f0faff;
 }
 
 form button {
-  background: #4CAF50;
+  background: #007bff;
   color: white;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  border: none;
 }
 
 form button:hover {
-  background: #45a049;
+  background: #0056b3;
   transform: translateY(-3px);
 }
 
-input[type="file"] {
-  cursor: pointer;
+p {
+  font-size: 14px;
+  color: #666;
 }
 
-input[type="file"]::-webkit-file-upload-button {
-  background: #4CAF50;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
+p a {
+  color: #007bff;
   font-weight: bold;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-input[type="file"]::-webkit-file-upload-button:hover {
-  background: #45a049;
+p a:hover {
+  color: #0056b3;
 }
